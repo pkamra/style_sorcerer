@@ -16,7 +16,6 @@ def generate_images():
     boto3_bedrock = bedrock.get_bedrock_client(region='us-east-1')
 
     data = request.json
-    # prompt = "Witch in a Halloween dress with a pointy hat, flying broomstick, mystical setting, vibrant colors, magical aura, detailed shading, digital painting, fantasy, spooky atmosphere, popular artist influence, 4k resolution"
     prompt = data.get('prompt')
 
     negative_prompts = [
